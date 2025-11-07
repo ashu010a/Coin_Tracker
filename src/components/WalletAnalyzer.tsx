@@ -37,11 +37,11 @@ const WalletAnalyzer = () => {
   const { toast } = useToast();
 
   const networks = [
-    { value: "ethereum", label: "Ethereum", apiUrl: "/api-evm/ethereum" },
-    { value: "base", label: "Base", apiUrl: "/api-evm/base" },
-    { value: "polygon", label: "Polygon", apiUrl: "/api-evm/polygon" },
-    { value: "arbitrum", label: "Arbitrum", apiUrl: "/api-evm/arbitrum" },
-    { value: "avalanche", label: "Avalanche", apiUrl: "/api-evm/avalanche" },
+    { value: "ethereum", label: "Ethereum", apiUrl: "/api/ethereum" },
+    { value: "base", label: "Base", apiUrl: "/api/base" },
+    { value: "polygon", label: "Polygon", apiUrl: "/api/polygon" },
+    { value: "arbitrum", label: "Arbitrum", apiUrl: "/api/arbitrum" },
+    { value: "avalanche", label: "Avalanche", apiUrl: "/api/avalanche" },
     { value: "solana", label: "Solana", apiUrl: "/api/sol" },
     { value: "usdt", label: "USDT (TRC20)", apiUrl: "/api/tr20" },
     { value: "btc", label: "Bitcoin", apiUrl: "/api/btc" },
