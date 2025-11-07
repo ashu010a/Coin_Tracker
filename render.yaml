@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: myapp-frontend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+  - type: web
+    name: myapp-api
+    env: node
+    buildCommand: npm install
+    startCommand: node api2/api.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18
