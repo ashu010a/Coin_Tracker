@@ -1,17 +1,18 @@
 services:
   - type: web
-    name: myapp-frontend
+    name: crypto-tracker-api
     env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm run preview
+    plan: free
+    region: singapore
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /healthz
     envVars:
-      - key: NODE_VERSION
-        value: 18
-  - type: web
-    name: myapp-api
-    env: node
-    buildCommand: npm install
-    startCommand: node api2/api.js
-    envVars:
-      - key: NODE_VERSION
-        value: 18
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: TRON_API_KEY
+        sync: false
+      - key: SOLANA_RPC_URL
+        sync: false
