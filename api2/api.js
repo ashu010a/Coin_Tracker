@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 // 🗝️ API Keys
 const TRON_API_KEY = process.env.TRON_API_KEY || "f66c1cdc-fef1-4e7a-8e4b-f467a3475bc4";
 const SOLANA_RPC_URL = process.env.SOLANA_RPC_URL || "https://solana-mainnet.g.alchemy.com/v2/UobFJAojTbHia1QN8j1F2";
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "AQ.Ab8RN6JPTPPihiZ5cUf213qWX7qZI7kq-dSBZlSEe7juQvBpVA";
 const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash"; // default per latest quickstart
 const genAI = GEMINI_API_KEY ? new GoogleGenerativeAI(GEMINI_API_KEY) : null;
 
